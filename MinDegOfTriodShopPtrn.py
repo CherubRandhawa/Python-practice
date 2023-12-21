@@ -18,5 +18,3 @@ def minTrioDeg(n: int, edges: [int]):
                 if n3 in graph[n2]:
                     ans = min(ans, degree[n1] + degree[n2] + degree[n3] - 6 ) # 6 subtracted bcoz it formas a trio so 2*3 edges = 6 deg by default 
     return ans if ans<sys.maxsize else -1
-
-
